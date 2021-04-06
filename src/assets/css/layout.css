@@ -1,0 +1,11 @@
+.main-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.ct-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
