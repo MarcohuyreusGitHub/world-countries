@@ -1,0 +1,8 @@
+.areas-select {
+  color: tomato;
+  font-size: 24px;
+}
+
+.areas-select input {
+  display: inline-block;
+}
