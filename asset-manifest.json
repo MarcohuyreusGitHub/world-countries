@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/world-countries-territories/static/css/main.82db3de5.chunk.css",
-    "main.js": "/world-countries-territories/static/js/main.a40db4ff.chunk.js",
-    "main.js.map": "/world-countries-territories/static/js/main.a40db4ff.chunk.js.map",
+    "main.css": "/world-countries-territories/static/css/main.63fa1b06.chunk.css",
+    "main.js": "/world-countries-territories/static/js/main.397c9eb6.chunk.js",
+    "main.js.map": "/world-countries-territories/static/js/main.397c9eb6.chunk.js.map",
     "runtime-main.js": "/world-countries-territories/static/js/runtime-main.c9e5c6d5.js",
     "runtime-main.js.map": "/world-countries-territories/static/js/runtime-main.c9e5c6d5.js.map",
-    "static/js/2.15eb6204.chunk.js": "/world-countries-territories/static/js/2.15eb6204.chunk.js",
-    "static/js/2.15eb6204.chunk.js.map": "/world-countries-territories/static/js/2.15eb6204.chunk.js.map",
+    "static/js/2.ed0e2e3c.chunk.js": "/world-countries-territories/static/js/2.ed0e2e3c.chunk.js",
+    "static/js/2.ed0e2e3c.chunk.js.map": "/world-countries-territories/static/js/2.ed0e2e3c.chunk.js.map",
     "index.html": "/world-countries-territories/index.html",
-    "static/css/main.82db3de5.chunk.css.map": "/world-countries-territories/static/css/main.82db3de5.chunk.css.map",
-    "static/js/2.15eb6204.chunk.js.LICENSE.txt": "/world-countries-territories/static/js/2.15eb6204.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/world-countries-territories/static/media/earth-1.9babc3b1.jpg"
+    "static/css/main.63fa1b06.chunk.css.map": "/world-countries-territories/static/css/main.63fa1b06.chunk.css.map",
+    "static/js/2.ed0e2e3c.chunk.js.LICENSE.txt": "/world-countries-territories/static/js/2.ed0e2e3c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c9e5c6d5.js",
-    "static/js/2.15eb6204.chunk.js",
-    "static/css/main.82db3de5.chunk.css",
-    "static/js/main.a40db4ff.chunk.js"
+    "static/js/2.ed0e2e3c.chunk.js",
+    "static/css/main.63fa1b06.chunk.css",
+    "static/js/main.397c9eb6.chunk.js"
   ]
 }
