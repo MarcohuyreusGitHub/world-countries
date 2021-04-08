@@ -1,1 +1,1 @@
-# World: Countries and Territories
+# World Countries and Territories

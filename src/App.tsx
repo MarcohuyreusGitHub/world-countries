@@ -3,8 +3,18 @@ import CtCol from "./components/CtCol/CtCol";
 
 function App() {
   return (
-    <div className="ct-col">
-      <CtCol array={data.worlds} />
+    <div className="main-container">
+      <div className="ct-col"></div>
+      <div className="ct-col">
+        <CtCol array={data.worlds} />
+      </div>
+      <div className="ct-col">
+        <CtCol array={data.worlds} />
+      </div>
+      <div className="ct-col">
+        <CtCol array={data.worlds} />
+      </div>
+      <div className="ct-col"></div>
     </div>
   );
 }

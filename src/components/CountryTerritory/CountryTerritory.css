@@ -1,7 +1,7 @@
 /* ct stands for CountryTerritory */
 .ct-box {
   padding: 5px;
-  background-color: cyan;
+  background-color: transparent;
 }
 
 .ct {
@@ -9,7 +9,7 @@
   font-size: 16px;
   border-radius: 5px;
   text-align: center;
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .border-bot {
