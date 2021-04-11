@@ -6,3 +6,6 @@
 .areas-select input {
   display: inline-block;
 }
+.areas-select * {
+  cursor: pointer;
+}

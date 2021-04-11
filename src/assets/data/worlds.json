@@ -1086,6 +1086,7 @@
   {
     "id": 156,
     "code": "AN",
+    "isoAlpha3Code": "ANT",
     "name": "Netherlands Antilles",
     "area": "North America"
   },
@@ -1180,7 +1181,13 @@
     "name": "Palau",
     "area": "Asia"
   },
-  { "id": 170, "code": "PS", "name": "Palestinian Territory", "area": "Asia" },
+  {
+    "id": 170,
+    "code": "PS",
+    "name": "Palestinian Territory",
+    "isoAlpha3Code": "PSE",
+    "area": "Asia"
+  },
   {
     "id": 171,
     "code": "PA",
@@ -1282,6 +1289,7 @@
   {
     "id": 185,
     "code": "BL",
+    "isoAlpha3Code": "RWA",
     "name": "Saint Barth\u00c3\u00a9lemy",
     "area": "North America"
   },
