@@ -1,4 +1,4 @@
-import * as data from "./assets/data/worlds2.json";
+import * as data from "./assets/data/json/worlds.json";
 import AreaSelector from "./components/AreaSelector/AreaSelector";
 import CtCol from "./components/CtCol/CtCol";
 import Footer from "./layouts/Footer/Footer";

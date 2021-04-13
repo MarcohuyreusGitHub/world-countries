@@ -5,8 +5,12 @@ const CountryTerritory = function (countryTerritory: ICountryTerritory) {
   return (
     <div className="ct-box">
       <div className="ct">
-        <p className="ct-code border-bot">{countryTerritory.code}</p>
-        <p className="font-size-1x5">{countryTerritory.name}</p>
+        <p className="ct-code border-bot">
+          <span>{countryTerritory.alpha2Code}</span>
+          &nbsp;&nbsp;&nbsp;
+          <span>{countryTerritory.alpha3Code}</span>
+        </p>
+        <p className="font-size-1x5">{countryTerritory.capital}</p>
       </div>
     </div>
   );
