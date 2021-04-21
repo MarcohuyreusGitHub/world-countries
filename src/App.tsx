@@ -1,33 +1,94 @@
+import React from "react";
 import * as data from "./assets/data/json/worlds.json";
-import AreaSelector from "./components/AreaSelector/AreaSelector";
+import RegionSelector from "./components/RegionSelector/RegionSelector";
 import CtCol from "./components/CtCol/CtCol";
 import Footer from "./layouts/Footer/Footer";
 import Navbar from "./layouts/Navbar/Navbar";
 
-function App() {
-  const col1 = data.worlds.slice(0, 84);
-  const col2 = data.worlds.slice(84, 168);
-  const col3 = data.worlds.slice(168, 250);
-  return (
-    <div>
-      <Navbar />
-      <AreaSelector />
-      <div className="main-container">
-        <div className="ct-col"></div>
-        <div className="ct-col">
-          <CtCol array={col1} />
+class App extends React.Component<{}, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      col1: data.worlds.slice(0, 84),
+      col2: data.worlds.slice(84, 168),
+      col3: data.worlds.slice(168, 250),
+    };
+  }
+
+  regionFilter = (event: any) => {
+    switch (event.target.value) {
+      case "all": {
+        this.setState({
+          col1: data.worlds.slice(0, 10),
+          col2: data.worlds.slice(0, 10),
+          col3: data.worlds.slice(0, 10),
+        });
+        break;
+      }
+      case "Asia": {
+        this.countriesOfRegion("region", "Asia");
+        break;
+      }
+      case "Asia": {
+        this.countriesOfRegion("region", "Asia");
+        break;
+      }
+      case "Asia": {
+        this.countriesOfRegion("region", "Asia");
+        break;
+      }
+      default: {
+        return;
+      }
+    }
+  };
+
+  countriesOfRegion(regionType: string, regionName: string) {
+    if (regionType == "region") {
+      const newData = data.worlds.filter(
+        (country) => country.region === regionName
+      );
+      let len = newData.length / 3;
+      this.setState({
+        col1: newData.slice(0, len),
+        col2: newData.slice(len, len * 2),
+        col3: newData.slice(len * 2, newData.length),
+      });
+    } else {
+      const newData = data.worlds.filter(
+        (country) => country.subregion === regionName
+      );
+      let len = newData.length / 3;
+      this.setState({
+        col1: newData.slice(0, len),
+        col2: newData.slice(len, len * 2),
+        col3: newData.slice(len * 2, newData.length),
+      });
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <RegionSelector regionFilter={this.regionFilter} />
+        <div className="main-container">
+          <div className="ct-col"></div>
+          <div className="ct-col">
+            <CtCol array={this.state.col1} />
+          </div>
+          <div className="ct-col">
+            <CtCol array={this.state.col2} />
+          </div>
+          <div className="ct-col">
+            <CtCol array={this.state.col3} />
+          </div>
+          <div className="ct-col"></div>
         </div>
-        <div className="ct-col">
-          <CtCol array={col2} />
-        </div>
-        <div className="ct-col">
-          <CtCol array={col3} />
-        </div>
-        <div className="ct-col"></div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
