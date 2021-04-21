@@ -4,7 +4,7 @@ import IRegionalBloc from "./RegionalBlocs.model";
 import ITranslation from "./Translation.model";
 
 export default interface ICountryTerritory {
-  name?: string | null;
+  name?: string;
   topLevelDomain?: string[] | null;
   alpha2Code?: string | null;
   alpha3Code?: string | null;
