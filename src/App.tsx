@@ -1,7 +1,7 @@
 import React from "react";
 import * as data from "./assets/data/json/worlds.json";
-import RegionSelector from "./components/RegionSelector/RegionSelector";
-import CtCol from "./components/CtCol/CtCol";
+import RegionFilter from "./components/RegionFilter/RegionFilter";
+import CountriesCol from "./components/CountriesCol/CountriesCol";
 import Footer from "./layouts/Footer/Footer";
 import Navbar from "./layouts/Navbar/Navbar";
 
@@ -16,8 +16,9 @@ class App extends React.Component<{}, any> {
   }
 
   regionFilter = (event: any) => {
+    console.log(event.target.value);
     switch (event.target.value) {
-      case "all": {
+      case "All": {
         this.setState({
           col1: data.worlds.slice(0, 10),
           col2: data.worlds.slice(0, 10),
@@ -44,7 +45,7 @@ class App extends React.Component<{}, any> {
   };
 
   countriesOfRegion(regionType: string, regionName: string) {
-    if (regionType == "region") {
+    if (regionType === "region") {
       const newData = data.worlds.filter(
         (country) => country.region === regionName
       );
@@ -71,17 +72,17 @@ class App extends React.Component<{}, any> {
     return (
       <div>
         <Navbar />
-        <RegionSelector regionFilter={this.regionFilter} />
+        <RegionFilter regionFilter={this.regionFilter} />
         <div className="main-container">
           <div className="ct-col"></div>
           <div className="ct-col">
-            <CtCol array={this.state.col1} />
+            <CountriesCol countries={this.state.col1} />
           </div>
           <div className="ct-col">
-            <CtCol array={this.state.col2} />
+            <CountriesCol countries={this.state.col2} />
           </div>
           <div className="ct-col">
-            <CtCol array={this.state.col3} />
+            <CountriesCol countries={this.state.col3} />
           </div>
           <div className="ct-col"></div>
         </div>

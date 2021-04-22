@@ -1,13 +1,13 @@
-import "./CountryTerritory.css";
-import ICountryTerritory from "../../model/CountryTerritory.model";
+import "./Country.css";
+import ICountryTerritory from "../../model/Country.model";
 
 const CountryTerritory = function (countryTerritory: ICountryTerritory) {
   const flag = require(`../../assets/data/flags/16x16/${countryTerritory.alpha2Code?.toLowerCase()}.png`)
     .default;
   return (
-    <div className="ct-box">
-      <div className="ct">
-        <p className="ct-code border-bot">
+    <div className="country-box">
+      <div className="country">
+        <p className="country-code border-bot">
           <img src={flag} alt={countryTerritory.name} />
           &nbsp;&nbsp;&nbsp;
           <span>{countryTerritory.alpha2Code}</span>

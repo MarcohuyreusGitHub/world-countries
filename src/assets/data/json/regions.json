@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Asia",
+    "code": "AS",
+    "subregions": [
+      { "name": "Northern Asia", "code": "NAS" },
+      { "name": "Central Asia", "code": "CAS" },
+      {
+        "name": "Southern Asia",
+        "code": ""
+      },
+      { "name": "Western Asia", "code": "" },
+      { "name": "South-Eastern Asia", "code": "" },
+      { "name": "Eastern Asia", "code": "" }
+    ]
+  },
+  {
+    "name": "Europe",
+    "code": "EU",
+    "subregions": [
+      {
+        "name": "Northern Europe",
+        "code": ""
+      },
+      { "name": "Southern Europe", "code": "" },
+      { "name": "Western Europe", "code": "" },
+      { "name": "Eastern Europe", "code": "" }
+    ]
+  },
+  {
+    "name": "Africa",
+    "code": "AF",
+    "subregions": [
+      {
+        "name": "Northern Africa",
+        "code": ""
+      },
+      { "name": "Middle Africa", "code": "" },
+      { "name": "Western Africa", "code": "" },
+      { "name": "Southern Africa", "code": "" },
+      { "name": "Eastern Africa", "code": "" }
+    ]
+  },
+  {
+    "name": "Oceania",
+    "code": "OC",
+    "subregions": [
+      {
+        "name": "Polynesia",
+        "code": ""
+      },
+      { "name": "Australia and New Zealand", "code": "" },
+      { "name": "Melanesia", "code": "" },
+      { "name": "Micronesia", "code": "" }
+    ]
+  },
+  {
+    "name": "Americas",
+    "code": "AM",
+    "subregions": [
+      {
+        "name": "Northern America",
+        "code": ""
+      },
+      { "name": "Central America", "code": "" },
+      { "name": "Caribbean", "code": "" },
+      { "name": "South America", "code": "" }
+    ]
+  },
+  {
+    "name": "Polar",
+    "code": "PL",
+    "subregions": [
+      {
+        "name": "Artic",
+        "code": ""
+      },
+      { "name": "Antarctica", "code": "AN" }
+    ]
+  }
+]

@@ -1,11 +1,11 @@
-.areas-select {
+.regions-select {
   color: tomato;
   font-size: 24px;
 }
 
-.areas-select input {
+.regions-select input {
   display: inline-block;
 }
-.areas-select * {
+.regions-select * {
   cursor: pointer;
 }

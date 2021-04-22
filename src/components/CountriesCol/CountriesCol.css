@@ -1,10 +1,10 @@
 /* ct stands for CountryTerritory */
-.ct-box {
+.country-box {
   padding: 5px;
   background-color: cyan;
 }
 
-.ct {
+.country {
   padding: 5px;
   font-size: 16px;
   border-radius: 5px;
@@ -16,6 +16,6 @@
   border-bottom: 1px solid black;
 }
 
-.ct-code {
+.country-code {
   font-size: 16px;
 }

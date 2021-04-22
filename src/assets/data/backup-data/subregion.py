@@ -7,8 +7,8 @@ data = json.load(ws)
 subregion = []
 for d in data:
 
-    if not d['subregion'] in subregion:
-        subregion.append(d['subregion'])
+    if not d['region'] in subregion:
+        subregion.append(d['region'])
 
-out = open('subregion.txt', 'w')
+out = open('region.txt', 'w')
 json.dump(subregion, out)

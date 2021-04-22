@@ -3,7 +3,7 @@ import ILanguage from "./Language.model";
 import IRegionalBloc from "./RegionalBlocs.model";
 import ITranslation from "./Translation.model";
 
-export default interface ICountryTerritory {
+export default interface ICountry {
   name?: string;
   topLevelDomain?: string[] | null;
   alpha2Code?: string | null;
