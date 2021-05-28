@@ -1,21 +1,28 @@
-import IRegion from "model/Region.model";
+import React from "react";
 
-const RegionSelect = function (props: { regions: IRegion[] }) {
-  const items = [];
-  for (let region of props.regions) {
-    items.push(
-      <option key={region.code} value={region.name}>
-        {region.name}
-      </option>
+class RegionSelect extends React.Component<any, any> {
+  render() {
+    const items = [];
+    for (let region of this.props.regions) {
+      items.push(
+        <option key={region.code} value={region.name}>
+          {region.name}
+        </option>
+      );
+    }
+
+    return (
+      <div className="">
+        <select
+          id="regions"
+          className="form-select form-select-lg rounded region-select"
+          onChange={this.props.regionFilter}
+        >
+          {items}
+        </select>
+      </div>
     );
   }
-  return (
-    <div className="">
-      <select id="regions" className="form-select">
-        {items}
-      </select>
-    </div>
-  );
-};
+}
 
 export default RegionSelect;

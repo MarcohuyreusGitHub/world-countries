@@ -1,11 +1,23 @@
-.regions-select {
-  color: tomato;
-  font-size: 24px;
+.regions-filter {
+  padding: 10px 0px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.regions-select input {
-  display: inline-block;
+@media only screen and (max-width: 768px) {
+  .regions-filter {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
-.regions-select * {
-  cursor: pointer;
+
+.regions-filter > label {
+  color: tomato;
+  font-size: 20px;
+}
+
+.region-select {
+  font-size: 20px;
 }

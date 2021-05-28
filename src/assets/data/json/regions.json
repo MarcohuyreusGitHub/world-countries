@@ -1,6 +1,11 @@
 {
   "regions": [
     {
+      "name": "All",
+      "code": "ALL",
+      "subregions": [{ "name": "All", "code": "All" }]
+    },
+    {
       "name": "Asia",
       "code": "AS",
       "subregions": [
@@ -74,7 +79,7 @@
       "subregions": [
         {
           "name": "Artic",
-          "code": "AT"
+          "code": "ARC"
         },
         { "name": "Antarctica", "code": "AN" }
       ]

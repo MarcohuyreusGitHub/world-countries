@@ -10,13 +10,55 @@ class RegionFilter extends React.Component<any, any> {
   }
 
   render() {
-    return (
-      <div className="">
-        <label htmlFor="regions">Regions</label>
-        <RegionSelect regions={data.regions} />
+    const items = [];
+    for (let region of this.props.regions) {
+      items.push(
+        <option key={region.code} value={region.name}>
+          {region.name}
+        </option>
+      );
+    }
 
-        <label htmlFor="subregions">Subegions</label>
-        <SubregionSelect subregions={data.regions[0].subregions} />
+    const items2 = [];
+    for (let subregion of this.props.subregions) {
+      items2.push(
+        <option key={subregion.code} value={subregion.name}>
+          {subregion.name}
+        </option>
+      );
+    }
+
+    return (
+      // <div className="regions-filter form-inline">
+      //   <label htmlFor="regions">Region&nbsp;</label>
+      //   <RegionSelect regions={data.regions} />
+      //   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      //   <label htmlFor="subregions">Subegion&nbsp;</label>
+      //   <SubregionSelect subregions={data.regions[0].subregions} />
+      // </div>
+
+      <div className="regions-filter form-inline">
+        <label htmlFor="regions">Region&nbsp;</label>
+        <div className="">
+          <select
+            id="regions"
+            className="form-select form-select-lg rounded region-select"
+            onChange={this.props.regionFilter}
+          >
+            {items}
+          </select>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label htmlFor="subregions">Subegion&nbsp;</label>
+        <div className="">
+          <select
+            id="subregions"
+            className="form-select form-select-lg rounded region-select"
+            onChange={this.props.subregionFilter}
+          >
+            {items2}
+          </select>
+        </div>
       </div>
     );
   }
